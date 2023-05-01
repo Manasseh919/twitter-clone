@@ -1,7 +1,12 @@
-import { View, Text, Image, StyleSheet,FlatList } from "react-native";
+import { View, Text, Image, StyleSheet, FlatList } from "react-native";
 
-const Tweet = ({tweet}) => {
-    
+import { TweetType } from "../types";
+
+type TweetProps = {
+  tweet: TweetType;
+};
+
+const Tweet = ({ tweet }: TweetProps) => {
   return (
     <View style={styles.container}>
       <Image src={tweet.user.image} style={styles.userimage} />
@@ -19,7 +24,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderColor: "lightgray",
-    backgroundColor:'white'
+    backgroundColor: "white",
   },
   userimage: {
     width: 50,
