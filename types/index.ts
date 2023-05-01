@@ -14,6 +14,6 @@ export type TweetType = {
     image?:string,
     numberOfComments:number,
     numberOfRetweets?:number,
-    numberOfLikea?:number,
+    numberOfLikes?:number,
     impressions?:number,
 }
