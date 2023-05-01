@@ -11,7 +11,7 @@ const tweets = [
     createdAt: '2020-08-27T12:00:00.000Z',
     content: 'Frontend development and backend development',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/thumbnail.png',
+      'https://res.cloudinary.com/manasseh/image/upload/v1682955935/Screenshot_2023-05-01_at_3.43.47_PM_mafghn.png',
     numberOfComments: 123,
     numberOfRetweets: 11,
     numberOfLikes: 10,

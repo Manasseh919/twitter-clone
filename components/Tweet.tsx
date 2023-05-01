@@ -1,20 +1,9 @@
-import { View, Text, Image, StyleSheet, FlatList } from "react-native";
-import { Entypo, EvilIcons } from "@expo/vector-icons";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
+import IconButton from "./IconButton";
 import { TweetType } from "../types";
+import { Entypo, EvilIcons } from "@expo/vector-icons";
+import { Link } from "expo-router";
 
-type IconButtonProps = {
-  icon: React.ComponentProps<typeof EvilIcons>['name'];
-  text?: string | number;
-};
-
-const IconButton = ({ icon, text }: IconButtonProps) => {
-  return (
-    <View style={{ flexDirection: "row", alignItems: "center" }}>
-      <EvilIcons name={icon} size={22} color="gray" />
-      <Text style={{ fontSize: 12, color: "gray" }}>{text}</Text>
-    </View>
-  );
-};
 
 type TweetProps = {
   tweet: TweetType;
@@ -22,7 +11,9 @@ type TweetProps = {
 
 const Tweet = ({ tweet }: TweetProps) => {
   return (
-    <View style={styles.container}>
+    <Link href={`/tweet/${tweet.id}`} asChild>
+    <Pressable style={styles.container}>
+        
       <Image src={tweet.user.image} style={styles.userimage} />
       <View style={styles.mainContainer}>
         <View style={{ flexDirection: "row" }}>
@@ -48,7 +39,8 @@ const Tweet = ({ tweet }: TweetProps) => {
           <IconButton icon="share-apple" />
         </View>
       </View>
-    </View>
+    </Pressable>
+    </Link>
   );
 };
 
