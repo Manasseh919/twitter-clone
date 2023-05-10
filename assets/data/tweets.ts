@@ -3,15 +3,15 @@ const tweets = [
     id: 't0',
     user: {
       id: 'u1',
-      username: 'mann_u',
-      name: 'Manasseh',
+      username: 'VadimNotJustDev',
+      name: 'Vadim',
       image:
-        'https://manasseh.netlify.app/static/media/me3.59d202a1d0ea3fa35983.jpg',
+        'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
     },
     createdAt: '2020-08-27T12:00:00.000Z',
-    content: 'Frontend development and backend development',
+    content: 'Can you please check if the Subscribe button on Youtube works?',
     image:
-      'https://res.cloudinary.com/manasseh/image/upload/v1682955935/Screenshot_2023-05-01_at_3.43.47_PM_mafghn.png',
+      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/thumbnail.png',
     numberOfComments: 123,
     numberOfRetweets: 11,
     numberOfLikes: 10,

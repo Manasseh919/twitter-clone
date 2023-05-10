@@ -5,15 +5,14 @@ export type User = {
   image?: string;
 };
 
-
 export type TweetType = {
-    content:string,
-    user:User,
-    id:string,
-    createdAt:string,
-    image?:string,
-    numberOfComments:number,
-    numberOfRetweets?:number,
-    numberOfLikes?:number,
-    impressions?:number,
-}
+  id: string;
+  content: string;
+  user: User;
+  createdAt: string;
+  image?: string;
+  numberOfComments?: number;
+  numberOfRetweets?: number;
+  numberOfLikes?: number;
+  impressions?: number;
+};
